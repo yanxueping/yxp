@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,body {
+            width: 100%;
+            height: 100%;
+        }
+
+        header.yhq-header {
+            width: 100%;
+            height: 1.86rem;
+            text-align: center;
+            box-sizing: border-box;
+            border-bottom: 2px solid #07ca61;
+            position: relative;
+            color: #333;
+            font: 0.76rem/1.82rem '黑体';
+        }
+
+            .yhq-header .back-button {
+                position: absolute;
+                width: 1.24rem;
+                height: 1.84rem;
+                left: 0;
+                top: 0;
+                border: 0;
+                outline: none;
+                background: url('icon-back.png') no-repeat center center #fff;
+                background-size: 0.44rem 0.8rem;              
+            }
+
+        .Explain {
+        	height: 2rem;
+        	background: #f88266;
+        	text-align: center;
+        	font-size: 0.52rem;
+        	color: #FFFFFF;
+        	line-height:0.72rem ;
+        	padding: 0 0.4rem;
+        } 
+        .Explain p {
+        	padding-top:0.4rem ;
+        } 
+        
+        .explain {
+        	height: 3.6rem;
+        	text-align: center;
+        	border-bottom: 1px solid #CCCCCC;
+        }  
+        .explain h2 {
+        	font-size: 0.76rem;
+        	margin-top:1rem ;
+        }
+        .explain h4 {
+        	font-size: 0.56rem;
+        	color: #07ca61;
+        	margin-top:0.4rem ;
+        }
+        
+                    
+        #center {
+        	padding: 0 0.4rem;
+        }
+        .liyou {
+        	height: 2rem;
+        	border-bottom: 1px solid #CCCCCC;
+        }
+        .liyou span {
+        	font-size: 0.64rem;
+        	line-height: 2rem;
+        	display: inline-block;
+        }
+        .xuanze {
+        	float: right;
+        }
+        .xuanzhong {
+        	width: 0.8rem;
+        	height: 0.8rem;
+   			border: 2px solid #CCCCCC;
+			border-radius: 50%;
+			display: inline-block;
+			margin-top: 0.6rem;
+			position: relative;
+        }
+        .yuan {
+        	background: url('xuanzhong.png') no-repeat center;
+        	width: 0.4rem;
+        	height: 0.4rem;
+        	display:inline-block;
+        	position: absolute;
+        	top:0.26rem ;	
+        	left: 0.2rem;
+        }
+        input:checked + .xuanzhong{
+			background-color: green;
+		}
+		  .denglu {
+          	background: url('denglu.png') no-repeat;
+   /*       	width:14.2rem ;
+          	height: 1.92rem;
+          	padding-top:1.7rem ;*/
+          	background-size:14.2rem 1.92rem ;
+          	margin-top:1.7rem ;
+          	text-align: center;
+          }
+          .denglu a {
+          	text-decoration: none;
+          	color: #FFFFFF;
+          	font-size: 0.64rem;
+          	height: 1.92rem;
+          	line-height: 1.92rem;
+          }
+    </style>
+    <script src="mobile.js"></script>
+</head>
+<body>
+
+    <header class="yhq-header">
+        <button class="back-button"></button>
+      		 取消订单
+    </header>
+    
+    <div>
+    	<div class="Explain">
+    		<p>若单日取消订单达到3次，账户将会被冻结1天，请谨慎取消!您当日已取消 2 次</p>
+    	</div>
+    	
+    	<div class="explain">
+    		<h2>请您真实告诉我们取消原因</h2>
+    		<h4>我们会努力为您提供更好的服务</h4>
+    	</div>
+    </div>
+    
+    <div id="center">
+    	<div class="liyou">
+    		<span>司机离我太远</span>
+    		<div class="xuanze">
+				<label><input class="input" type="radio" name="nouth" hidden/><span class="xuanzhong"><span class="yuan"></span></span></label>
+			</div>
+    	</div>
+    	<div class="liyou">
+    		<span>下错单或重复下单</span>
+    		<div class="xuanze">
+				<label><input class="input" type="radio" name="nouth" hidden/><span class="xuanzhong"><span class="yuan"></span></span></label>
+			</div>
+    	</div>
+    	<div class="liyou">
+    		<span>暂时不需要车</span>
+    		<div class="xuanze">
+				<label><input class="input" type="radio" name="nouth" hidden/><span class="xuanzhong"><span class="yuan"></span></span></label>
+			</div>
+    	</div>
+    	<div class="liyou">
+    		<span>司机让我取消订单</span>
+    		<div class="xuanze">
+				<label><input class="input" type="radio" name="nouth" hidden/><span class="xuanzhong"><span class="yuan"></span></span></label>
+			</div>
+    	</div>
+    	<div class="denglu">
+    		<a href="#">提交</a>
+    	</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+           * {
+            margin: 0;
+            padding: 0;
+        }
+		a {
+			text-decoration: none;
+			color: black;
+		}
+        html,body {
+            width: 100%;
+            height: 100%;
+        }
+
+        header.yhq-header {
+            width: 100%;
+            height: 1.86rem;
+            text-align: center;
+            box-sizing: border-box;
+            border-bottom: 2px solid #07ca61;
+            position: relative;
+            color: #333;
+            font: 0.76rem/1.82rem '黑体';
+        }
+
+            .yhq-header .back-button {
+                position: absolute;
+                width: 1.24rem;
+                height: 1.84rem;
+                left: 0;
+                top: 0;
+                border: 0;
+                outline: none;
+                background: url('icon-back.png') no-repeat center center #fff;
+                background-size: 0.44rem 0.8rem;              
+            }
+		#conter {
+			padding: 0.4rem;
+			border-bottom: 0.4rem solid #ebebeb;
+		}
+		img  {
+			display: inline-block;
+		}
+		.touxiang {
+			position: relative;
+		
+		}
+		.touxiang span{
+			font-size: 0.64rem;
+			display:inline-block;
+			position: absolute;
+			top: 0;
+			left: 2.3rem;
+			
+		}
+		.touxiang p {
+			display: inline-block;
+			position: absolute;
+			top: 1rem;
+			left: 2.3rem;
+			font-size: 0.48rem;
+			color: #969696;
+		}
+		.xing {
+			position: absolute;
+			top: 1.8rem;
+			left: 2.3rem;
+		}
+		.shouji {
+			float: right;
+			position: absolute;
+			top: 2.4rem;
+			right: 0.4rem;
+		}
+		
+		#detailed , #jifei{
+			padding: 0 0.4rem;
+		}
+		.time {
+			padding:0.4rem 0;
+			border-bottom: 1px solid #969696;
+			overflow: hidden;	
+		}
+		.jifei {
+			padding-top:0.4rem ;
+
+		}
+		  span {
+			font-size: 0.48rem;
+			color: #969696;
+			text-align: center;
+		/*	line-height: 1.4rem;*/
+			padding-left:0.2rem ;
+		}
+		 p {
+			display: inline-block;
+			float: right;
+			color: #008000;
+			font-size:0.52rem ;
+			/*line-height: 1.4rem;*/
+			text-align: center;
+		}
+		 .car{
+		    font-size: 0.64rem;
+		    color: #969696;
+		}
+		.car span {
+			color: red;
+		}
+		.car b {
+			color: black;
+		}
+		 .car-1 {
+			display: inline-block;
+			float: right;
+			color: black;
+			font-size:0.64rem ;
+			text-align: center;
+		}
+		.car-1 span {
+			color: red;
+			font-size: 0.76rem;
+			font-weight: 700;
+		}
+		dl {
+			float: right;
+		}
+		.haoma {
+			color: #969696;
+			font-size: 0.64rem;
+			line-height: 0.8rem;
+			text-align: right;
+		}
+		  .denglu {
+          	background: url('denglu.png') no-repeat;
+   /*       	width:14.2rem ;
+          	height: 1.92rem;
+          	padding-top:1.7rem ;*/
+          	background-size:14.2rem 1.92rem ;
+          	margin-top:1rem ;
+          	text-align: center;
+          	margin-bottom: 0.4rem;
+
+          }
+          .denglu a {
+          	text-decoration: none;
+          	color: #FFFFFF;
+          	font-size: 0.64rem;
+          	height: 1.92rem;
+          	line-height: 1.92rem;
+          }
+    </style>
+    <script src="mobile.js"></script>
+</head>
+<body>
+
+    <header class="yhq-header">
+        <button class="back-button"></button>
+        订单详细
+    </header>
+    
+     <div id="conter">
+     	<div class="yonghu">
+     		<div class="touxiang">
+     			<img src="touxiang.png"/> 
+     			<span>张师傅  粤B2360W</span>
+     			<p>面包车</p>
+     			<img class="xing" src="wujiaoxing.png"/>
+     		</div>
+     		<img class="shouji" src="shouji.png"/>
+     	</div>
+     </div>
+     
+     <div id="detailed">
+     	<div class="time">
+     		<img src="shizhong.png"/><span>2016-10-23  18:00</span>
+     		<p>司机已分配</p>
+     	</div>
+     	<div class="time">
+     		<span class="car">车型</span>
+     		<p class="car-1">面包车</p>
+     	</div>
+     	<div class="time">
+     		<span class="car">发货地</span>
+     		<dl>
+     			<dt class="car-1">中舟控股中心A座西门</dt>
+     			<dd class="haoma">1872507022</dd>
+     		</dl>
+     	</div>
+     	<div class="time">
+     		<span class="car">收货地</span>
+     		<dl>
+     			<dt class="car-1">深圳北西广场B2出口</dt>
+     			<dd class="haoma">1872507022</dd>
+     		</dl>
+     	</div>
+     	<div class="time">
+     		<span class="car">出发时间</span>
+     		<p class="car-1">2016-10-25 18:00</p>
+     	</div>    	
+     	<div class="time">
+     		<span class="car">附加时间</span>
+     		<p class="car-1">搬运，返程</p>
+     	</div>
+     	<div class="time">
+     		<span class="car">备注</span>
+     		<p class="car-1">请直接到收获地点收货，谢谢！</p>
+     	</div>
+     </div>
+     
+     <div id="jifei">
+     	<div class="jifei">
+     		<span class="car">起步价</span>
+     		<p class="car-1">33元</p>
+     	</div>
+     	<div>
+     		<span class="car">里程费（3.2公里）</span>
+     		<p class="car-1">64元</p>
+     	</div>
+     	<div>
+     		<span class="car">返程费用（5公里免费）</span>
+     		<p class="car-1">0元</p>
+     	</div>
+     	<div>
+     		<span class="car">优惠卷已抵扣<span> ￥10元</span></span>
+     		<p class="car-1"><a href="#">切换优惠卷  <</a></p>
+     	</div>
+    	<div>
+     		<span class="car"><b>合计</b></span>
+     		<p class="car-1"><span>￥58元</span></p>
+     	</div>
+     	<div class="denglu">
+    		<a href="#">登录</a>
+    	</div>
+     </div>
+
+</body>
+</html>
